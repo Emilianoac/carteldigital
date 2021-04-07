@@ -1,6 +1,7 @@
 import {disenadores} from './disenadores.js'
 
 function seleccionarColor(idInput , arrayItemColores) {
+    console.log(document.querySelector(idInput).value)
     let nuevoColor = document.querySelector(idInput).value;
     document.querySelector(idInput).style.backgroundColor = nuevoColor;
     document.querySelector(idInput).style.backgroundImage = 'unset';
@@ -48,11 +49,11 @@ function restaurarColores( ) {
         el.COLOR_PICKER_SECUNDARIO.style.backgroundColor = 'unset';
 
         for (const item of el.ARRAY_COLORES_SECUNDARIOS) {
-            if (item.nodeName == 'P') {
+            if (item.nodeName == 'P' || item.nodeName == 'H4') {
                 item.style.color = el.SECUNDARIO_VALUE;
             }
     
-            if(item.nodeName != 'P') {
+            if(item.nodeName != 'P' && item.nodeName != 'H4') {
                 item.style.backgroundColor = el.SECUNDARIO_VALUE;
             }
         }

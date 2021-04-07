@@ -52,7 +52,7 @@ export const disenadores = [
         
         COLOR_PICKER_SECUNDARIO : document.querySelector('#color_secundario_karl'),
         ARRAY_COLORES_SECUNDARIOS : document.querySelectorAll('[data-color="karl_secundario"]'),
-        INPUT_SECUNDARIOL : '#color_secundario_karl',
+        INPUT_SECUNDARIO : '#color_secundario_karl',
         SECUNDARIO_VALUE : '#1a4f9d',
         
         COLOR_PICKER_COMPLEMENTARIO : document.querySelector('#color_complementario_karl'),
