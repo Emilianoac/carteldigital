@@ -1,7 +1,6 @@
 import {disenadores} from './disenadores.js'
 
 function seleccionarColor(idInput , arrayItemColores) {
-    console.log(document.querySelector(idInput).value)
     let nuevoColor = document.querySelector(idInput).value;
     document.querySelector(idInput).style.backgroundColor = nuevoColor;
     document.querySelector(idInput).style.backgroundImage = 'unset';
@@ -25,7 +24,7 @@ function seleccionarColor(idInput , arrayItemColores) {
     }
 }
 
-function restaurarColores( ) {
+function restaurarColores() {
 
     disenadores.forEach(el => {
         el.COLOR_PICKER_PRIMARIO.dataset.currentColor = el.PRIMARIO_VALUE;
