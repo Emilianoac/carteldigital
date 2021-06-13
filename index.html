@@ -22,45 +22,58 @@
                 <div class="swiper-container slider-carteles">
                     <div class="swiper-wrapper">   
                         <div class="swiper-slide">
-                            <article class="armin-hofmann pt-xl-5">
+                            <article class="cartel armin-hofmann pt-xl-5">
                                 <div class="container position-relative">
                                     <div class="row">
                                         <div class="col-xl-1 order-1 order-xl-0 mb-5 mt-xl-0 mt-4">
                                             <div class="herramientas card p-3">
                                                 <div class="d-flex d-xl-block align-items-center justify-content-between ">
                                                     <div class="d-flex d-xl-block align-items-center justify-content-end">
-                                                        <div id="reproducir_armin" class="btn-herramientas reproducir p-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Reproducir"></div>
-                                                        <div id="restaurar_colores_armin" class="btn-herramientas restaurar-colores p-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Restaurar Colores originales"> </div>
+                                                        <div 
+                                                            id="reproducir_armin" 
+                                                            class="btn-herramientas reproducir p-3" 
+                                                            data-bs-toggle="tooltip" 
+                                                            data-bs-placement="top" 
+                                                            title="Reproducir">
+                                                        </div>
+                                                        <div 
+                                                            id="restaurar_colores_armin" 
+                                                            class="btn-herramientas restaurar-colores p-3" 
+                                                            data-bs-toggle="tooltip" 
+                                                            data-bs-placement="top" 
+                                                            title="Restaurar Colores originales"> 
+                                                        </div>
                                                     </div>
                                                     <hr>
-                                                    <div class="experimentar d-flex d-xl-grid justify-content-center align-items-center">
+                                                    <div class="barra-herramientas experimentar d-flex d-xl-grid justify-content-center align-items-center">
                                                         <img class="img-fluid mx-auto d-none d-xl-block icono-filtro" src="./img/filtro.svg" alt="">
-                                                        <input readonly id="color_primario_armin" class="mb-xl-3 mb-0" value="#f1da33" data-jscolor="">
-                                                        <input readonly id="color_secundario_armin" class="mb-xl-3 mb-0"  value="#000" data-jscolor="">
-                                                        <input readonly id="color_complementario_armin" class="mb-xl-3 mb-0" value="#000" data-jscolor="">
+                                                        <input readonly id="color_primario_armin" class="mb-xl-3 mb-0" value="#f1da33" data-defaultPrimario="#f1da33" data-jscolor="">
+                                                        <input readonly id="color_secundario_armin" class="mb-xl-3 mb-0"  value="#000" data-defaultSecundario="#000" data-jscolor="">
+                                                        <input readonly id="color_complementario_armin" class="mb-xl-3 mb-0" value="#000" data-defaultComplementario="#000" data-jscolor="">
+                                                        <input class="delay" type="hidden" value="400">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-xl-6 order-0 order-xl-1 px-xl-0 ">
-                                            <div class="poster poster-armin animacion  px-lg-auto" data-color="armin_primario">
+                                            <div data-cartel="" class="poster poster-armin animacion px-lg-auto" data-color="primario">
                                                 <div class="container-pieza">
-                                                    <div class="pieza" data-color="armin_secundario"></div>
-                                                    <div class="pieza" data-color="armin_secundario"></div>
-                                                    <div class="pieza" data-color="armin_secundario"></div>
-                                                    <div class="pieza" data-color="armin_secundario"></div>
-                                                    <div class="pieza" data-color="armin_secundario"></div>
+                                                    <div class="pieza" data-color="secundario"></div>
+                                                    <div class="pieza" data-color="secundario"></div>
+                                                    <div class="pieza" data-color="secundario"></div>
+                                                    <div class="pieza" data-color="secundario"></div>
+                                                    <div class="pieza" data-color="secundario"></div>
                                                 </div>
                                                 <div class="info">
-                                                    <p data-color="armin_complementario">5.Sept bis</p>
-                                                    <p data-color="armin_complementario">11 Okl</p>
-                                                    <p data-color="armin_complementario">Gewermuseum</p>
-                                                    <p data-color="armin_complementario">Basel</p>
+                                                    <p data-color="complementario">5.Sept bis</p>
+                                                    <p data-color="complementario">11 Okl</p>
+                                                    <p data-color="complementario">Gewermuseum</p>
+                                                    <p data-color="complementario">Basel</p>
                                                 </div>
                                                 <div class="titulo">
-                                                    <p data-color="armin_complementario">Alte und </p>
-                                                    <p data-color="armin_complementario">neue Formen </p>
-                                                    <p data-color="armin_complementario">in Japan</p>
+                                                    <p data-color="complementario">Alte und </p>
+                                                    <p data-color="complementario">neue Formen </p>
+                                                    <p data-color="complementario">in Japan</p>
                                                 </div>
                                             </div>
                                         </div>                
@@ -68,9 +81,9 @@
                                             <h2 class="nombre-disenador">Armin Hofmann</h2>
                                             <div class="container-img">
                                                 <img class="img-fluid avatar rounded-circle" src="./img/armin-hofmann.jpg" alt="">
-                                                <div class="shape-img-big" data-color="armin_primario"></div>
-                                                <div class="shape-img" data-color="armin_secundario"></div>
-                                                <div class="shape-img" data-color="armin_secundario"></div>
+                                                <div class="shape-img-big" data-color="primario"></div>
+                                                <div class="shape-img" data-color="secundario"></div>
+                                                <div class="shape-img" data-color="secundario"></div>
                                                 <div class="shape-img"></div>
                                             </div>
                                             <div class="pe-0 pe-xl-5">
@@ -91,7 +104,7 @@
                         </div> 
     
                         <div class="swiper-slide">
-                            <article class="milton-glaser pt-xl-5">
+                            <article class="cartel milton-glaser pt-xl-5">
                                 <div class="container position-relative ">
                                     <div class="row">
                                         <div class="col-xl-1 order-1 order-xl-0 mb-5 mt-xl-0 mt-4">
@@ -102,29 +115,30 @@
                                                         <div id="restaurar_colores_milton" class="btn-herramientas restaurar-colores p-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Restaurar Colores originales"> </div>
                                                     </div>
                                                     <hr>
-                                                    <div class="experimentar d-flex d-xl-grid justify-content-center align-items-center">
+                                                    <div class="barra-herramientas experimentar d-flex d-xl-grid justify-content-center align-items-center">
                                                         <img class="img-fluid mx-auto d-none d-xl-block icono-filtro" src="./img/filtro.svg" alt="">
-                                                        <input readonly id="color_primario_milton" class="mb-xl-3 mb-0" value="#ec0517" data-jscolor="">
-                                                        <input readonly id="color_secundario_milton" class="mb-xl-3 mb-0"  value="#313233" data-jscolor="">
-                                                        <input readonly id="color_complementario_milton" class="mb-xl-3 mb-0" value="#F7F5F5" data-jscolor="">
+                                                        <input readonly id="color_primario_milton" class="mb-xl-3 mb-0" value="#ec0517" data-defaultPrimario="#ec0517" data-jscolor="">
+                                                        <input readonly id="color_secundario_milton" class="mb-xl-3 mb-0"  value="#ec0517" data-jscolor="" data-defaultSecundario="#313233">
+                                                        <input readonly id="color_complementario_milton" class="mb-xl-3 mb-0" value="#F7F5F5" data-defaultComplementario="#F7F5F5" data-jscolor="">
+                                                        <input class="delay" type="hidden" value="200">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-xl-6 order-0 px-xl-0 order-xl-1">
-                                            <div class="poster px-lg-auto" data-color="milton_complementario" >
+                                            <div data-cartel="" class="poster px-lg-auto" data-color="complementario">
                                                 <div class="poster-content poster-content-milton animacion">
                                                     <div class="texto-vertical">
-                                                        <p data-color="milton_secundario">O</p>
-                                                        <p data-color="milton_primario">R</p>
-                                                        <P data-color="milton_secundario">G</P>
-                                                        <p data-color="milton_primario">A</p>
-                                                        <P data-color="milton_secundario">N</P>
-                                                        <p data-color="milton_primario">I</p>
-                                                        <P data-color="milton_secundario">Z</P>
-                                                        <P data-color="milton_primario">E</P>
+                                                        <p data-color="secundario">O</p>
+                                                        <p data-color="primario">R</p>
+                                                        <P data-color="secundario">G</P>
+                                                        <p data-color="primario">A</p>
+                                                        <P data-color="secundario">N</P>
+                                                        <p data-color="primario">I</p>
+                                                        <P data-color="secundario">Z</P>
+                                                        <P data-color="primario">E</P>
                                                     </div>
-                                                    <div data-color="milton_secundario" class="circulo"></div>
+                                                    <div data-color="secundario" class="circulo"></div>
                                                 </div>
                                             </div>
                                         </div>  
@@ -132,9 +146,9 @@
                                             <h2 class="nombre-disenador">Milton Glaser</h2>
                                             <div class="container-img">
                                                 <img class="img-fluid avatar rounded-circle" src="./img/milton-glaser.jpg" alt="">
-                                                <div class="shape-img-big" data-color="milton_primario"></div>
-                                                <div class="shape-img" data-color="milton_secundario"></div>
-                                                <div class="shape-img" data-color="milton_secundario"></div>
+                                                <div class="shape-img-big" data-color="primario"></div>
+                                                <div class="shape-img" data-color="secundario"></div>
+                                                <div class="shape-img" data-color="secundario"></div>
                                                 <div class="shape-img"></div>
                                             </div>
                                             <div class="pe-0 pe-xl-5">
@@ -156,7 +170,7 @@
                         </div> 
     
                         <div class="swiper-slide">
-                            <article class="karl-gerst pt-xl-5">
+                            <article class="cartel karl-gerst pt-xl-5">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-xl-1 order-1 order-xl-0 mb-5 mt-xl-0 mt-4">
@@ -167,34 +181,35 @@
                                                         <div id="restaurar_colores_karl" class="btn-herramientas restaurar-colores p-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Restaurar Colores originales"> </div>
                                                     </div>
                                                     <hr>
-                                                    <div class="experimentar d-flex d-xl-grid justify-content-center align-items-center">
+                                                    <div class="barra-herramientas experimentar d-flex d-xl-grid justify-content-center align-items-center">
                                                         <img class="img-fluid mx-auto d-none d-xl-block icono-filtro" src="./img/filtro.svg" alt="">
-                                                        <input readonly id="color_primario_karl" class="mb-xl-3 mb-0" value="#EC5A2C" data-jscolor="">
-                                                        <input readonly id="color_secundario_karl" class="mb-xl-3 mb-0"  value="#313233" data-jscolor="">
-                                                        <input readonly id="color_complementario_karl" class="mb-xl-3 mb-0" value="#F7F5F5" data-jscolor="">
+                                                        <input readonly id="color_primario_karl" class="mb-xl-3 mb-0" value="#EC5A2C" data-defaultPrimario="#EC5A2C" data-jscolor="">
+                                                        <input readonly id="color_secundario_karl" class="mb-xl-3 mb-0"  value="#1a4f9d" data-defaultSecundario="#1a4f9d" data-jscolor="">
+                                                        <input readonly id="color_complementario_karl" class="mb-xl-3 mb-0" value="#191919" data-defaultComplementario="#191919" data-jscolor="">
+                                                        <input class="delay" type="hidden" value="200">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-xl-6 order-0 order-xl-1 px-xl-0 ">
-                                            <div class="poster poster-karl animacion px-lg-auto" data-color="karl_primario">
+                                            <div data-cartel="" class="poster poster-karl animacion px-lg-auto" data-color="primario">
                                                 <div class="container-pieza">
-                                                    <h4 data-color="karl_secundario">lokal</h4>
-                                                    <h4 data-color="karl_secundario" >national</h4>
-                                                    <h4 data-color="karl_secundario">international</h4>
-                                                    <h4 data-color="karl_secundario">National</h4>
-                                                    <h4 data-color="karl_secundario">euting</h4>
+                                                    <h4 data-color="secundario">lokal</h4>
+                                                    <h4 data-color="secundario" >national</h4>
+                                                    <h4 data-color="secundario">international</h4>
+                                                    <h4 data-color="secundario">National</h4>
+                                                    <h4 data-color="secundario">euting</h4>
                                                 </div>
-                                                <p class="texto-vertical" data-color="karl_complementario">Lorem ipsum dolot ser <span>4</span></p>
+                                                <p class="texto-vertical" data-color="complementario">Lorem ipsum dolot ser <span>4</span></p>
                                             </div>
                                         </div>
                                         <div class="col-xl-5 order-2 text-center text-xl-start">                       
                                             <h2 class="nombre-disenador">Karl Gerstner</h2>
                                             <div class="container-img">
                                                 <img class="img-fluid avatar rounded-circle" src="./img/karl.jpg" alt="">
-                                                <div class="shape-img-big" data-color="karl_primario"></div>
-                                                <div class="shape-img" data-color="karl_secundario"></div>
-                                                <div class="shape-img" data-color="karl_secundario"></div>
+                                                <div class="shape-img-big" data-color="primario"></div>
+                                                <div class="shape-img" data-color="secundario"></div>
+                                                <div class="shape-img" data-color="secundario"></div>
                                                 <div class="shape-img"></div>
                                             </div>
                                             <div class="pe-0 pe-xl-5">
