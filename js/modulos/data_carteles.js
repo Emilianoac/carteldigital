@@ -4,7 +4,7 @@ const cartelesArray = Array.from($carteles);
 
 cartelesArray.forEach( cartel => {
     const itemsColoreables = Array.from(cartel.querySelectorAll("[data-color]"));
-    const inputsPickers = Array.from(cartel.querySelector(".barra-herramientas").querySelectorAll("input"));
+    const inputsPickers = Array.from(cartel.querySelector(".controles__color").querySelectorAll("input"));
     carteles.push({
         items_primarios: itemsColoreables.filter(color => color.dataset.color == "primario"),
         items_secundarios: itemsColoreables.filter(color => color.dataset.color == "secundario"),
@@ -18,8 +18,8 @@ cartelesArray.forEach( cartel => {
         default_secundario: inputsPickers[1].dataset.defaultsecundario,
         default_complem: inputsPickers[2].dataset.defaultcomplementario,
 
-        play: cartel.querySelector('.reproducir'),
-        restaurar : cartel.querySelector('.restaurar-colores'),
+        play: cartel.querySelector('.control_reproduccion'),
+        restaurar : cartel.querySelector('.control_restauracion'),
         cartel: cartel.querySelector('[data-cartel]'),
         delay: cartel.querySelector('.delay').value,
     })
