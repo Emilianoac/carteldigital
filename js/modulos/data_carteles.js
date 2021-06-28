@@ -23,5 +23,4 @@ cartelesArray.forEach( cartel => {
         cartel: cartel.querySelector('[data-cartel]'),
         delay: cartel.querySelector('.delay').value,
     })
-    console.log(inputsPickers[0].dataset)
 });
