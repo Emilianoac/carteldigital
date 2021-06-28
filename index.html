@@ -4,59 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartel Digital</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@900&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=auto" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=auto" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@900&display=block" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=block" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=block" rel="stylesheet"> 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
+    <title>Cartel Digital</title>
 </head>
 <body>
-    <div class="container-xxl position-relative main-pieza-grafica">
+    <main class="container-xxl position-relative">
         <div class="row">
             <div class="col-lg-12">
                 <div class="swiper-container slider-carteles">
                     <div class="swiper-wrapper">   
-                        <div class="swiper-slide">
-                            <article class="cartel armin-hofmann pt-xl-5">
+                        <!--Armin Hoffman-->
+                        <section class="swiper-slide">
+                            <div class="cartel armin-hofmann pt-xl-5">
                                 <div class="container position-relative">
                                     <div class="row">
-                                        <div class="col-xl-1 order-1 order-xl-0 mb-5 mt-xl-0 mt-4">
-                                            <div class="herramientas card p-3">
-                                                <div class="d-flex d-xl-block align-items-center justify-content-between ">
-                                                    <div class="d-flex d-xl-block align-items-center justify-content-end">
-                                                        <div 
-                                                            id="reproducir_armin" 
-                                                            class="btn-herramientas reproducir p-3" 
-                                                            data-bs-toggle="tooltip" 
-                                                            data-bs-placement="top" 
-                                                            title="Reproducir">
-                                                        </div>
-                                                        <div 
-                                                            id="restaurar_colores_armin" 
-                                                            class="btn-herramientas restaurar-colores p-3" 
-                                                            data-bs-toggle="tooltip" 
-                                                            data-bs-placement="top" 
-                                                            title="Restaurar Colores originales"> 
-                                                        </div>
+                                        <div class="col-xl-1 order-1 order-xl-0">
+                                            <aside class="controles card p-3">
+                                                <div class="controles__container">
+                                                    <div class="controles__animacion">
+                                                        <button class="control_reproduccion" title="Reproducir" data-bs-toggle="tooltip" data-bs-placement="top"></button>
+                                                        <button class="control_restauracion" title="Restaurar Colores originales" data-bs-toggle="tooltip" data-bs-placement="top"></button>
                                                     </div>
                                                     <hr>
-                                                    <div class="barra-herramientas experimentar d-flex d-xl-grid justify-content-center align-items-center">
-                                                        <img class="img-fluid mx-auto d-none d-xl-block icono-filtro" src="./img/filtro.svg" alt="">
-                                                        <input readonly id="color_primario_armin" class="mb-xl-3 mb-0" value="#f1da33" data-defaultPrimario="#f1da33" data-jscolor="">
-                                                        <input readonly id="color_secundario_armin" class="mb-xl-3 mb-0"  value="#000" data-defaultSecundario="#000" data-jscolor="">
-                                                        <input readonly id="color_complementario_armin" class="mb-xl-3 mb-0" value="#000" data-defaultComplementario="#000" data-jscolor="">
+                                                    <div class="controles__color">
+                                                        <img class="icono-controles" src="./img/filtro.svg" alt="Icono controles"/>
+                                                        <input class="control_color" value="#f1da33" data-defaultPrimario="#f1da33" data-jscolor="" readonly/>
+                                                        <input class="control_color" value="#000" data-defaultSecundario="#000" data-jscolor="" readonly/>
+                                                        <input class="control_color" value="#000" data-defaultComplementario="#000" data-jscolor="" readonly/>
                                                         <input class="delay" type="hidden" value="400">
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </aside>
                                         </div>
-                                        <div class="col-xl-6 order-0 order-xl-1 px-xl-0 ">
-                                            <div data-cartel="" class="poster poster-armin animacion px-lg-auto" data-color="primario">
+                                        <div class="col-xl-6 order-0 order-xl-1 px-xl-0">
+                                            <article class="poster poster-armin animacion px-lg-auto" data-cartel="" data-color="primario">
                                                 <div class="container-pieza">
                                                     <div class="pieza" data-color="secundario"></div>
                                                     <div class="pieza" data-color="secundario"></div>
@@ -71,63 +59,66 @@
                                                     <p data-color="complementario">Basel</p>
                                                 </div>
                                                 <div class="titulo">
-                                                    <p data-color="complementario">Alte und </p>
-                                                    <p data-color="complementario">neue Formen </p>
+                                                    <p data-color="complementario">Alte und</p>
+                                                    <p data-color="complementario">neue Formen</p>
                                                     <p data-color="complementario">in Japan</p>
                                                 </div>
-                                            </div>
+                                            </article>
                                         </div>                
-                                        <div class="col-xl-5 order-2 text-center text-xl-start">
-                                            <h2 class="nombre-disenador">Armin Hofmann</h2>
-                                            <div class="container-img">
-                                                <img class="img-fluid avatar rounded-circle" src="./img/armin-hofmann.jpg" alt="">
-                                                <div class="shape-img-big" data-color="primario"></div>
-                                                <div class="shape-img" data-color="secundario"></div>
-                                                <div class="shape-img" data-color="secundario"></div>
-                                                <div class="shape-img"></div>
-                                            </div>
-                                            <div class="pe-0 pe-xl-5">
-                                                <strong class=" d-block mt-4">1920 - 2020</strong>
-                                                <p class="bio mt-3 mx-auto">
-                                                    Hofmann Fue fundamental en el desarrollo 
-                                                    del estilo de diseño gráfico conocido como <i class="text-dark"> Swiss Style</i>.  
-                                                </p>
-                                                <p class="bio mt-0 mx-auto">
-                                                    Su trabajo es reconocido por su dependencia de los elementos fundamentales de la forma gráfica punto, 
-                                                    línea y forma,  mientras transmite sutilmente simplicidad, complejidad, representación y abstracción.                  
-                                                </p>
+                                        <div class="col-xl-5 order-2">
+                                            <div class="ficha-disenador">
+                                                <h1 class="ficha-disenador__nombre">Armin Hofmann</h1>
+                                                <div class="ficha-disenador__row ">
+                                                    <img class="ficha-disenador__fotografia img-fluid" src="./img/armin-hofmann.jpg" alt="Fotografia de Armin Hofmann"/>
+                                                    <div class="circulo" data-color="secundario"></div>
+                                                    <div class="circulo" data-color="secundario"></div>
+                                                    <div class="circulo circulo_grande" data-color="primario"></div>
+                                                </div>
+                                                <p class="mt-4"><strong>1920 - 2020</strong></p>
+                                                <div class="ficha-disenador__biografia">
+                                                    <p>
+                                                        Hofmann Fue fundamental en el desarrollo del estilo de diseño gráfico conocido 
+                                                        como <i class="text-dark"> Swiss Style</i>.  
+                                                    </p>
+                                                    <p>
+                                                        Su trabajo es reconocido por su dependencia de los elementos fundamentales de 
+                                                        la forma gráfica punto, línea y forma,  mientras transmite sutilmente simplicidad, 
+                                                        complejidad, representación y abstracción.                  
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </article>
-                        </div> 
-    
-                        <div class="swiper-slide">
-                            <article class="cartel milton-glaser pt-xl-5">
-                                <div class="container position-relative ">
+                            </div>
+                        </section> 
+
+                        <!--Milton Glaser-->
+                        <section class="swiper-slide">
+                            <div class="cartel milton-glaser pt-xl-5">
+                                <div class="container position-relative">
                                     <div class="row">
-                                        <div class="col-xl-1 order-1 order-xl-0 mb-5 mt-xl-0 mt-4">
-                                            <div class="herramientas card p-3">
-                                                <div class="d-flex d-xl-block align-items-center justify-content-between ">
-                                                    <div class="d-flex d-xl-block align-items-center justify-content-end">
-                                                        <div id="reproducir_milton" class="btn-herramientas reproducir p-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Reproducir"></div>
-                                                        <div id="restaurar_colores_milton" class="btn-herramientas restaurar-colores p-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Restaurar Colores originales"> </div>
+                                        <div class="col-xl-1 order-1 order-xl-0">
+                                            <aside class="controles herramientas card p-3">
+                                                <div class="controles__container">
+                                                    <div class="controles__animacion">
+                                                        <button class="control_reproduccion" data-bs-toggle="tooltip" data-bs-placement="top" title="Reproducir"></button>
+                                                        <button class="control_restauracion" data-bs-toggle="tooltip" data-bs-placement="top" title="Restaurar Colores originales"></button>
                                                     </div>
                                                     <hr>
-                                                    <div class="barra-herramientas experimentar d-flex d-xl-grid justify-content-center align-items-center">
-                                                        <img class="img-fluid mx-auto d-none d-xl-block icono-filtro" src="./img/filtro.svg" alt="">
-                                                        <input readonly id="color_primario_milton" class="mb-xl-3 mb-0" value="#ec0517" data-defaultPrimario="#ec0517" data-jscolor="">
-                                                        <input readonly id="color_secundario_milton" class="mb-xl-3 mb-0"  value="#ec0517" data-jscolor="" data-defaultSecundario="#313233">
-                                                        <input readonly id="color_complementario_milton" class="mb-xl-3 mb-0" value="#F7F5F5" data-defaultComplementario="#F7F5F5" data-jscolor="">
-                                                        <input class="delay" type="hidden" value="200">
+                                                    <div class="controles__color">
+                                                        <img class="icono-controles" src="./img/filtro.svg" alt="Icono controles"/>
+                                                        <input class="control_color" value="#ec0517" data-defaultPrimario="#ec0517" data-jscolor="" readonly/>
+                                                        <input class="control_color" value="#ec0517" data-defaultSecundario="#313233" data-jscolor="" readonly/>
+                                                        <input class="control_color" value="#F7F5F5" data-defaultComplementario="#F7F5F5" data-jscolor="" readonly/>
+                                                        <input class="delay" type="hidden" value="200"/>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </aside>
                                         </div>
-                                        <div class="col-xl-6 order-0 px-xl-0 order-xl-1">
-                                            <div data-cartel="" class="poster px-lg-auto" data-color="complementario">
-                                                <div class="poster-content poster-content-milton animacion">
+                                        <div class="col-xl-6 order-0 px-xl-0 order-xl-1 px-xl-0">
+                                            <article class="poster px-lg-auto" data-color="complementario">
+                                                <div class="poster-content animacion" data-cartel="">
                                                     <div class="texto-vertical">
                                                         <p data-color="secundario">O</p>
                                                         <p data-color="primario">R</p>
@@ -138,61 +129,64 @@
                                                         <P data-color="secundario">Z</P>
                                                         <P data-color="primario">E</P>
                                                     </div>
-                                                    <div data-color="secundario" class="circulo"></div>
+                                                    <div class="circulo" data-color="secundario"></div>
                                                 </div>
-                                            </div>
+                                            </article>
                                         </div>  
-                                        <div class="col-xl-5 order-2 text-center text-xl-start">
-                                            <h2 class="nombre-disenador">Milton Glaser</h2>
-                                            <div class="container-img">
-                                                <img class="img-fluid avatar rounded-circle" src="./img/milton-glaser.jpg" alt="">
-                                                <div class="shape-img-big" data-color="primario"></div>
-                                                <div class="shape-img" data-color="secundario"></div>
-                                                <div class="shape-img" data-color="secundario"></div>
-                                                <div class="shape-img"></div>
-                                            </div>
-                                            <div class="pe-0 pe-xl-5">
-                                                <strong class=" d-block mt-4">1929 - 2020</strong>
-                                                <p class="bio mt-3 mx-auto">
-                                                    Glaser fue conocido sobre todo por sus diseños para discos y libros. 
-                                                    En el año 1977 dio vida al famoso símbolo para la campaña <i class="text-dark"> I Love New York</i>.
-                                                </p>
-                                                <p class="bio mt-0 mx-auto">
-                                                    El estilo de Glaser se caracterizó por el eclecticismo 
-                                                    y estuvo influido por numerosas y variadas fuentes como
-                                                    Piero della Francesca, el Arte islámico y Marcel Duchamp.
-                                                </p>
+                                        <div class="col-xl-5 order-2">
+                                            <div class="ficha-disenador">
+                                                <h1 class="ficha-disenador__nombre">Milton Glaser</h1>
+                                                <div class="ficha-disenador__row">
+                                                    <img class="ficha-disenador__fotografia img-fluid" src="./img/milton-glaser.jpg" alt="Fotografia de Milton Glaser"/>
+                                                    <div class="circulo shape-img" data-color="secundario"></div>
+                                                    <div class="circulo shape-img" data-color="secundario"></div>
+                                                    <div class="circulo circulo_grande" data-color="primario"></div>
+                                                </div>
+                                                <p class="mt-4"><strong>1929 - 2020</strong></p>
+                                                <div class="ficha-disenador__biografia">
+                                                    <p>
+                                                        Glaser fue conocido sobre todo por sus diseños para discos y libros. 
+                                                        En el año 1977 dio vida al famoso símbolo para la campaña 
+                                                        <i class="text-dark"> I Love New York</i>.
+                                                    </p>
+                                                    <p>
+                                                        El estilo de Glaser se caracterizó por el eclecticismo 
+                                                        y estuvo influido por numerosas y variadas fuentes como
+                                                        Piero della Francesca, el Arte islámico y Marcel Duchamp.
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </article>          
-                        </div> 
-    
-                        <div class="swiper-slide">
-                            <article class="cartel karl-gerst pt-xl-5">
-                                <div class="container">
+                            </div>          
+                        </section> 
+
+                        <!--Karl Gerstner-->
+                        <section class="swiper-slide">
+                            <div class="cartel karl-gerst pt-xl-5">
+                                <div class="container position-relative">
                                     <div class="row">
-                                        <div class="col-xl-1 order-1 order-xl-0 mb-5 mt-xl-0 mt-4">
-                                            <div class="herramientas card p-3">
-                                                <div class="d-flex d-xl-block align-items-center justify-content-between ">
-                                                    <div class="d-flex d-xl-block align-items-center justify-content-end">
-                                                        <div id="reproducir_karl" class="btn-herramientas reproducir p-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Reproducir"></div>
-                                                        <div id="restaurar_colores_karl" class="btn-herramientas restaurar-colores p-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Restaurar Colores originales"> </div>
+                                        <div class="col-xl-1 order-1 order-xl-0">
+                                            <aside class="controles card p-3">
+                                                <div class="controles__container">
+                                                    <div class="controles__animacion">
+                                                        <button class="control_reproduccion" data-bs-toggle="tooltip" data-bs-placement="top" title="Reproducir"></button>
+                                                        <button class="control_restauracion" data-bs-toggle="tooltip" data-bs-placement="top" title="Restaurar Colores originales"></button>
                                                     </div>
                                                     <hr>
-                                                    <div class="barra-herramientas experimentar d-flex d-xl-grid justify-content-center align-items-center">
-                                                        <img class="img-fluid mx-auto d-none d-xl-block icono-filtro" src="./img/filtro.svg" alt="">
-                                                        <input readonly id="color_primario_karl" class="mb-xl-3 mb-0" value="#EC5A2C" data-defaultPrimario="#EC5A2C" data-jscolor="">
-                                                        <input readonly id="color_secundario_karl" class="mb-xl-3 mb-0"  value="#1a4f9d" data-defaultSecundario="#1a4f9d" data-jscolor="">
-                                                        <input readonly id="color_complementario_karl" class="mb-xl-3 mb-0" value="#191919" data-defaultComplementario="#191919" data-jscolor="">
+                                                    <div class="controles__color">
+                                                        <img class="icono-controles" src="./img/filtro.svg" alt="Icono controles"/>
+                                                        <input class="control_color" value="#EC5A2C" data-defaultPrimario="#EC5A2C" data-jscolor="" readonly/>
+                                                        <input class="control_color" value="#1a4f9d" data-defaultSecundario="#1a4f9d" data-jscolor=""/>
+                                                        <input class="control_color" value="#191919" data-defaultComplementario="#191919" data-jscolor="">
                                                         <input class="delay" type="hidden" value="200">
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </aside>
                                         </div>
-                                        <div class="col-xl-6 order-0 order-xl-1 px-xl-0 ">
-                                            <div data-cartel="" class="poster poster-karl animacion px-lg-auto" data-color="primario">
+                                        <article class="col-xl-6 order-0 order-xl-1 px-xl-0">
+                                            <div class="poster poster-karl animacion px-lg-auto" data-color="primario" data-cartel="">
                                                 <div class="container-pieza">
                                                     <h4 data-color="secundario">lokal</h4>
                                                     <h4 data-color="secundario" >national</h4>
@@ -202,44 +196,48 @@
                                                 </div>
                                                 <p class="texto-vertical" data-color="complementario">Lorem ipsum dolot ser <span>4</span></p>
                                             </div>
-                                        </div>
-                                        <div class="col-xl-5 order-2 text-center text-xl-start">                       
-                                            <h2 class="nombre-disenador">Karl Gerstner</h2>
-                                            <div class="container-img">
-                                                <img class="img-fluid avatar rounded-circle" src="./img/karl.jpg" alt="">
-                                                <div class="shape-img-big" data-color="primario"></div>
-                                                <div class="shape-img" data-color="secundario"></div>
-                                                <div class="shape-img" data-color="secundario"></div>
-                                                <div class="shape-img"></div>
-                                            </div>
-                                            <div class="pe-0 pe-xl-5">
-                                                <strong class="d-block mt-4">1930 - 2017</strong>
-                                                <p class="bio mt-3 mx-auto">
-                                                    Gerstner fue uno de los diseñadores gráficos más destacados de Suiza.             
-                                                </p>
-                                                <p class="bio mt-2 mx-auto">
-                                                    Después de retirarse del trabajo activo de agencia diseñó 
-                                                    las identidades corporativas para compañías 
-                                                    como Swiss Air y Burda y Langenscheidt, además de trabajar como consultor de identidad mundial y diseñador para IBM.
-                                                </p>
-                                            </div>
+                                        </article>
+                                        <div class="col-xl-5 order-2">  
+                                            <div class="ficha-disenador">
+                                                <h1 class="ficha-disenador__nombre">Karl Gerstner</h1>
+                                                <div class="ficha-disenador__row">
+                                                    <img class="ficha-disenador__fotografia img-fluid" src="./img/karl.jpg" alt="Fotografia de Karl Gerstner"/>
+                                                    <div class="circulo" data-color="secundario"></div>
+                                                    <div class="circulo" data-color="secundario"></div>
+                                                    <div class="circulo circulo_grande" data-color="primario"></div>
+                                                </div>
+                                                <p class="mt-4"><strong>1930 - 2017</strong></p>
+                                                <div class="ficha-disenador__biografia">
+                                                    <p>
+                                                        Gerstner fue uno de los diseñadores gráficos más destacados de Suiza.             
+                                                    </p>
+                                                    <p>
+                                                        Después de retirarse del trabajo activo de agencia diseñó 
+                                                        las identidades corporativas para compañías 
+                                                        como Swiss Air y Burda y Langenscheidt, además de trabajar como consultor 
+                                                        de identidad mundial y diseñador para IBM.
+                                                    </p>
+                                                </div>
+                                            </div>                     
                                         </div>
                                     </div>
                                 </div>
-                            </article>
-                        </div>
+                            </div>
+                        </section>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.4.5/jscolor.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script type="module" src="js/index.js"></script>
     <script>
+
         jscolor.presets.default = {
             width: 120,             
             position: 'right',        
