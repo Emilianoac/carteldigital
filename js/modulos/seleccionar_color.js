@@ -6,7 +6,7 @@ function seleccionColor(input, ItemColores) {
 
     for (const item of ItemColores) {
         if (item.nodeName == 'P' || item.nodeName == 'H4') item.style.color = nuevoColor;
-        if (item.nodeName == 'DIV') item.style.backgroundColor = nuevoColor;
+        if (item.nodeName == 'DIV' || item.nodeName == 'ARTICLE' ) item.style.backgroundColor = nuevoColor;
     }
 }
 
