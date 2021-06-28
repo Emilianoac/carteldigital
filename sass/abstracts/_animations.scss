@@ -1,0 +1,263 @@
+@keyframes animacion_restaurar {
+
+    0% {
+        transform: rotate(0deg);      
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes animacion_reproducir {
+
+    0% {
+        transform: scale(1);      
+    }
+
+    50% {
+        transform: scale(0.8);      
+    }
+
+    100% {
+        transform: scale(1);    
+    }
+}
+
+@keyframes animacion_circulos_ficha {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    0% {
+        transform: translateY(0px);
+    }
+}
+
+
+//Animaciones Karl 
+@keyframes animacion_texto_vertical_karl {
+
+    0% {
+        transform: translateX(-20px) rotate(-90deg);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translateX(-20px) rotate(-90deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px) rotate(-90deg);
+        opacity: 1;
+    } 
+}
+
+@keyframes animacion_palabra_1_karl {
+
+    0% {
+        transform: translateX(800px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }  
+}
+
+@keyframes animacion_palabra_2_karl {
+
+    0% {
+        transform: translatey(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    } 
+}
+
+@keyframes animacion_palabra_3_karl {
+
+    0% {
+        transform: translatey(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes animacion_palabra_4_karl {
+
+    0% {
+        transform: translateX(-800px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    } 
+}
+
+@keyframes animacion_palabra_5_karl {
+
+    0% {
+        transform: rotate(90deg) translate(640px,20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(90deg) translate(240px,20px);
+        opacity: 1;
+    }
+}
+
+@keyframes animacion_palabra_5_karl_md {
+
+    0% {
+        transform: rotate(90deg) translate(640px,25px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(90deg) translate(220px, 50px);
+        opacity: 1;
+    }
+}
+
+@keyframes  animacion_palabra_5_karl_lg {
+
+    0% {
+        transform: rotate(90deg) translate(640px,20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(90deg) translate(240px,35px);
+        opacity: 1;
+    }
+}
+
+
+// Animaciones Armin
+@keyframes animacion_texto_armin {
+
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+
+@keyframes animacion_pieza_armin {
+
+    0% {
+        transform: scale(0) translateX(50px) rotate(-40deg) translateY(10px);
+    }
+
+    20% {
+        transform: scale(0) translateX(50px) rotate(-40deg) translateY(10px);
+    }
+
+
+    100% {
+        transform: scale(1.9) translateX(50px) rotate(20deg) translateY(10px);
+    }
+}
+
+@keyframes animacion_pieza_armin_md {
+
+    0% {
+        transform: scale(1) translateX(-100px) rotate(-40deg) translateY(-400px);
+    }
+
+    20% {
+        transform: scale(1) translateX(-100px) rotate(-40deg) translateY(-400px);
+    }
+
+
+    100% {
+        transform:  scale(1) translateX(-50px) rotate(20deg) translateY(-60px);
+    }
+}
+
+@keyframes animacion_pieza_armin_sm {
+
+    0% {
+        transform: scale(0.7) translateX(-200px) rotate(-40deg) translateY(-460px);
+    }
+
+    20% {
+        transform: scale(0.7) translateX(-200px) rotate(-40deg) translateY(-460px);
+    }
+
+
+    100% {
+        transform: scale(0.7) translateX(-140px) rotate(20deg) translateY(-140px);
+    }
+}
+
+@keyframes animacion_pieza_interior_armin {
+
+    0% {
+        transform: scale(1) rotate(0deg);
+
+    }
+
+    30% {
+        transform: scale(0.5) rotate(-90deg);  
+    }
+
+    100% {
+        transform: scale(1) rotate(-90deg);  
+    }
+
+}
+
+// Animaciones Milton 
+@keyframes animacion_letras_milton {
+
+    0% {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes animacion_circulo_milton {
+
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

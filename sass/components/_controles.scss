@@ -1,0 +1,127 @@
+
+.controles {
+    position: absolute;
+
+    .controles__container {
+    
+        button {
+            @include centrado();
+            margin-bottom: 0.8em;
+            padding: 1em;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 0, 0, 0.301);
+            transition: 0.9s cubic-bezier(0.215, 0.610, 0.355, 1);
+            cursor: pointer;
+ 
+            &::before {
+                @include centrado();
+                position: absolute;
+                content: '';
+                width: 30px;
+                height: 30px;
+                background-size: 13px 13px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            &:hover {
+                background-color: #000;
+            }
+    
+            &:hover::before {
+                filter: invert(1);
+            }
+        }
+    
+        .control_reproduccion {
+
+            &::before {
+                background-image: url(/img/play.png);
+            }
+
+            &:hover::before {
+                animation: animacion_reproducir 0.8s cubic-bezier(0.215, 0.610, 0.355, 1);
+            }
+        }
+
+        .control_restauracion {
+
+            &::before {
+                background-image: url(/img/redo.png);
+                background-size: 15px 15px;
+            }
+
+            &:hover::before {
+                animation: animacion_restaurar 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            }
+        }
+
+        .control_color {
+            display: block;
+            max-width: 0px;
+            margin-bottom: 0.6em;
+            border:1px solid rgba(0, 0, 0, 0.27);
+            border-radius: 5px;
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0;
+            cursor: pointer;
+
+            &:nth-of-type(2) {
+                transition-delay: 0.4s;
+            }
+
+            &:nth-of-type(3) {
+                transition-delay: 0.8s;
+            }
+        }
+
+        .icono-controles {
+            max-width: 20px;
+            width: 100%;
+            display: block;
+            margin: auto;
+            margin-bottom: 0.5em;
+        }
+    }
+}
+
+
+@media(max-width:1199px) {
+
+    .controles {
+        position: unset;
+        max-width: 300px;
+        margin: auto;
+        margin-top: 2em;
+
+        .controles__container {
+            @include centrado();
+            justify-content: space-between;
+
+            button {
+                margin-bottom: 0;
+                
+                &:first-of-type {
+                    margin-right: 0.4em;
+                }
+            }
+
+            .controles__animacion,
+            .controles__color {
+                @include centrado;
+            }
+
+            .controles__color {
+        
+                .control_color {
+                    margin-right: 0.3em;
+                    margin-bottom: 0;
+        
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,15 @@
 
 @import './abstracts/mixins';
+@import './abstracts/animations';
 
-@import './views/vista-pieza-grafica.scss';
+@import './base/base';
+
+@import './vendors/swiper-slider';
+
+@import './components/controles';
+@import './components/ficha-diseñador';
+@import './components/cartel';
+
 
 @import './disenadores/armin-hofmann';
 @import './disenadores/karl-gerst';
