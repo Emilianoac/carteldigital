@@ -36,7 +36,7 @@
         .control_reproduccion {
 
             &::before {
-                background-image: url(/img/play.png);
+                background-image: url(../img/play.png);
             }
 
             &:hover::before {
@@ -47,7 +47,7 @@
         .control_restauracion {
 
             &::before {
-                background-image: url(/img/redo.png);
+                background-image: url(../img/redo.png);
                 background-size: 15px 15px;
             }
 
